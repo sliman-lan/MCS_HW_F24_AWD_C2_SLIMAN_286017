@@ -1,0 +1,9 @@
+{% extends 'layout.html' %} {% block content %}
+<h2>Welcome, {{ student.name }}</h2>
+<h3>Your Enrolled Courses</h3>
+<ul>
+  {% for enrollment in enrollments %}
+  <li>Course ID: {{ enrollment.course_id }} </li>
+  {% endfor %}
+</ul>
+{% endblock %}
