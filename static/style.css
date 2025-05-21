@@ -33,7 +33,22 @@ body {
   border-radius: 25px;
 }
 
-/* .list-group-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-in-out;
-} */
+/* تخصيصات الجومبترون للوضع الفاتح */
+[data-theme="light"] .jumbotron {
+  background-color: #f8f9fa; /* لون خلفية فاتح */
+  color: #212529; /* لون نص داكن */
+  border: 1px solid #dee2e6;
+}
+
+/* تخصيصات الجومبترون للوضع الداكن */
+[data-theme="dark"] .jumbotron {
+  background-color: #2d333b; /* لون خلفية داكن */
+  color: #adbac7; /* لون نص فاتح */
+  border: 1px solid #444c56;
+}
+
+/* تخصيصات الزر داخل الجومبترون */
+[data-theme="dark"] .jumbotron .btn-primary {
+  background-color: #316dca;
+  border-color: #316dca;
+}
